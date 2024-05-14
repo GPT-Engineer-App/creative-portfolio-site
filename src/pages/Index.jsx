@@ -15,7 +15,7 @@ const Index = () => {
             Full Stack Developer
           </Text>
           <HStack spacing={4} justify="center" mt={4}>
-            <Link href="https://github.com/johndoe" isExternal>
+            <Link href="https://github.com/EineKleinNachtMusik" isExternal>
               <IconButton aria-label="GitHub" icon={<FaGithub />} size="lg" />
             </Link>
             <Link href="https://linkedin.com/in/johndoe" isExternal>
