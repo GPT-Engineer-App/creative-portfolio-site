@@ -7,7 +7,7 @@ const Index = () => {
       <VStack spacing={8} align="stretch">
         {/* Header Section */}
         <Box textAlign="center" py={10}>
-          <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcm9maWxlJTIwcGljdHVyZXxlbnwwfHx8fDE3MTU2OTc1MTF8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile Picture" mx="auto" />
+          <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50fGVufDB8fHx8MTY4Njk5NzUxMQ&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile Picture" mx="auto" />
           <Heading as="h1" size="2xl" mt={4}>
             Rafael Jhon M. Valenzuela
           </Heading>
