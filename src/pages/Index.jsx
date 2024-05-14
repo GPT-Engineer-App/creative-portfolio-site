@@ -28,7 +28,7 @@ const Index = () => {
           <Heading as="h1" size="2xl" mt={4}>
             Rafael Jhon M. Valenzuela
           </Heading>
-          <Text fontSize="xl" color="gray.500">
+          <Text fontSize="xl" color="teal.300">
             Full Stack Developer
           </Text>
           <HStack spacing={4} justify="center" mt={4}>
