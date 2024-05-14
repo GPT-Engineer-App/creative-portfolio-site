@@ -1,9 +1,9 @@
-import { Container, VStack, HStack, Box, Text, Heading, Image, IconButton, Link, SimpleGrid, Button, useToast } from "@chakra-ui/react";
+import { Container, VStack, HStack, Box, Text, Heading, Image, IconButton, Link, SimpleGrid, Button, useToast, useColorModeValue } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container maxW="container.lg" p={4}>
+    <Container maxW="container.lg" p={4} bgImage="url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMHdlYnNpdGV8ZW58MHx8fHwxNjg2OTk3NTEx&ixlib=rb-4.0.3&q=80&w=1080')" bgSize="cover" bgPosition="center" color={useColorModeValue("white", "gray.800")}>
       <VStack spacing={8} align="stretch">
         {/* Header Section */}
         <Box textAlign="center" py={10}>
