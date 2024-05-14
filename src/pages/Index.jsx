@@ -78,8 +78,8 @@ const Index = () => {
           </Heading>
           <Text fontSize="md">
             Feel free to reach out to me via email at{" "}
-            <Link href="mailto:johndoe@example.com" color="teal.500">
-              johndoe@example.com
+            <Link href="mailto:val.rafael202025@gmail.com" color="teal.500">
+              val.rafael202025@gmail.com
             </Link>
             .
           </Text>
