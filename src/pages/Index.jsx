@@ -1,13 +1,28 @@
-import { Container, VStack, HStack, Box, Text, Heading, Image, IconButton, Link, SimpleGrid, Button, useToast, useColorModeValue } from "@chakra-ui/react";
+import { Container, VStack, HStack, Box, Text, Heading, Image, IconButton, Link, SimpleGrid, Button, useToast, useColorModeValue, Input } from "@chakra-ui/react";
+import { useState } from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Index = () => {
+  const [profilePic, setProfilePic] = useState("https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50fGVufDB8fHx8MTY4Njk5NzUxMQ&ixlib=rb-4.0.3&q=80&w=1080");
+
+  const handleProfilePicChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setProfilePic(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   return (
     <Container maxW="container.lg" p={4} bgImage="url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwZXJzb25hbCUyMHdlYnNpdGV8ZW58MHx8fHwxNjg2OTk3NTEx&ixlib=rb-4.0.3&q=80&w=1080')" bgSize="cover" bgPosition="center" color={useColorModeValue("white", "gray.800")}>
       <VStack spacing={8} align="stretch">
         {/* Header Section */}
         <Box textAlign="center" py={10}>
-          <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzdHVkZW50fGVufDB8fHx8MTY4Njk5NzUxMQ&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile Picture" mx="auto" />
+          <Image borderRadius="full" boxSize="150px" src={profilePic} alt="Profile Picture" mx="auto" />
+          <Input type="file" accept="image/*" onChange={handleProfilePicChange} mt={4} />
           <Heading as="h1" size="2xl" mt={4}>
             Rafael Jhon M. Valenzuela
           </Heading>
