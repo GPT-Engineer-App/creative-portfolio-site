@@ -21,8 +21,10 @@ const Index = () => {
       <VStack spacing={8} align="stretch">
         {/* Header Section */}
         <Box textAlign="center" py={10}>
-          <Image borderRadius="full" boxSize="150px" src={profilePic} alt="Profile Picture" mx="auto" />
-          <Input type="file" accept="image/*" onChange={handleProfilePicChange} mt={4} />
+          <Box position="relative" display="inline-block" mx="auto">
+            <Image borderRadius="full" boxSize="150px" src={profilePic} alt="Profile Picture" />
+            <Input type="file" accept="image/*" onChange={handleProfilePicChange} position="absolute" top="0" left="0" width="100%" height="100%" opacity="0" cursor="pointer" _hover={{ opacity: 1 }} />
+          </Box>
           <Heading as="h1" size="2xl" mt={4}>
             Rafael Jhon M. Valenzuela
           </Heading>
